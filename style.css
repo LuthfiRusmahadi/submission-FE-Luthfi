@@ -1,0 +1,173 @@
+header{
+    text-align: center;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+search-food {
+    display: block;
+    margin: 50px auto;
+    max-width: 600px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+input {
+    font-size: 18px;
+    padding: 10px;
+}
+
+button {
+    background-color: #ff6600;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    margin-left: 10px;
+    padding: 10px 20px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.result {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.meal {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: left;
+}
+
+.meal h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.meal img {
+    border-radius: 5px 5px 0 0;
+    width: 100%;
+}
+
+.meal p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Mengatur font dan warna untuk judul */
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #444444;
+    margin: 1rem 0;
+  }
+  
+  /* Mengatur tampilan kotak pencarian */
+  .search-box {
+    margin: 2rem 0;
+  }
+  
+  .search-box input[type="text"] {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 1.25rem;
+  }
+  
+  /* Mengatur tampilan tombol cari */
+  .search-box input[type="submit"] {
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #4caf50;
+    color: #ffffff;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.25rem;
+    cursor: pointer;
+  }
+  
+  /* Mengatur tampilan daftar hasil pencarian */
+  .search-results {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 2rem 0;
+  }
+  
+  /* Mengatur tampilan setiap hasil pencarian */
+  .meal-card {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    overflow: hidden;
+  }
+  
+  .meal-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .meal-card h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #444444;
+    margin: 1rem;
+  }
+  
+  .meal-card p {
+    font-size: 1.25rem;
+    color: #666666;
+    margin: 1rem;
+  }
+  
+  .meal-card a {
+    margin: 1rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #4caf50;
+    color: #ffffff;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.25rem;
+    cursor: pointer;
+    align-self: flex-start;
+  }
+  
+  /* Mengatur tampilan loading spinner */
+  .spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .spinner img {
+    width: 50px;
+    height: 50px;
+  }
+  
